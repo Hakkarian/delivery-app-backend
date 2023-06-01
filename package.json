@@ -1,0 +1,32 @@
+{
+  "name": "delivery-app-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hakkarian/delivery-app-backend.git"
+  },
+  "keywords": [],
+  "author": "theola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hakkarian/delivery-app-backend/issues"
+  },
+  "homepage": "https://github.com/Hakkarian/delivery-app-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.1",
+    "nanoid": "^4.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.22"
+  }
+}
