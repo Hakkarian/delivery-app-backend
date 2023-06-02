@@ -7,4 +7,11 @@ const addOrder = catchAsync(async (req, res, next) => {
     res.json(newOrder);
 });
 
-module.exports = { addOrder };
+const findOrder = catchAsync(async (req, res, next) => {
+    const { email, phone } = req.body;
+    // const { orderId } = req.params;
+    const orders = await Order.find({ email, phone });
+    res.json(orders);
+})
+
+module.exports = { addOrder, findOrder };
