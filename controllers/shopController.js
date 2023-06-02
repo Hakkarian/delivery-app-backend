@@ -1,5 +1,6 @@
 const catchAsync = require("../utils/catchAsync");
 const Shop = require('../models/Shop');
+const Product = require("../models/Product");
 
 const getAllShops = catchAsync(async (req, res, next) => {
     const shops = await Shop.find();
